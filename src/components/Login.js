@@ -11,8 +11,9 @@ const Login = () => {
     <div>
       <Header />
       <div>
-        <img src="https://xboxwire.thesourcemediaassets.com/sites/2/2023/05/Background-size1920x1080-4e1694a6-75aa-4c36-9d4d-7fb6a3102005-bc5318781aad7f5c8520.png" alt="Login Background" />
-        <form className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black/85 p-16 rounded-md'>
+        <img className='h-full w-full object-cover' src="https://xboxwire.thesourcemediaassets.com/sites/2/2023/05/Background-size1920x1080-4e1694a6-75aa-4c36-9d4d-7fb6a3102005-bc5318781aad7f5c8520.png" alt="Login Background" />
+        <form className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform
+                 bg-black/85 p-16 rounded-md min-h-[420px] w-[420px] transition-colors duration-400">
           <h1 className='text-3xl font-bold mb-8 text-white'>{formTitle}</h1>
           {!isSignedInForm && <input className='p-3 my-2 bg-gray-700 rounded-md w-full' type="text" placeholder='Full Name' />}
           <input className='p-3 my-2 bg-gray-700 rounded-md w-full' type="email" placeholder='Email or Phone Number' />
