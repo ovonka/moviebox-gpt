@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { use } from 'react'
 import Header from './Header'
-
+import { BROWSE_BG_URL } from '../utils/constants'
 const Browse = () => {
   return (
     <div>
       <Header />
       <div>
-         <img className='w-full' src="https://wallpapers.com/images/hd/netflix-background-gs7hjuwvv2g0e9fj.jpg" alt="Browse/Main Page Background" />
+         <img className='w-full' src={BROWSE_BG_URL} alt="Browse/Main Page Background" />
       </div>
     </div>
   )
