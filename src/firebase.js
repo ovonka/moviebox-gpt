@@ -8,7 +8,7 @@ import { getAuth } from "firebase/auth";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyA2kk_JwpeLw461TkFSZDQgAGyWSnTapSE",
+  apiKey: process.env.REACT_APP_GOOGLE_API_KEY,
   authDomain: "moviebox-gpt.firebaseapp.com",
   projectId: "moviebox-gpt",
   storageBucket: "moviebox-gpt.firebasestorage.app",
